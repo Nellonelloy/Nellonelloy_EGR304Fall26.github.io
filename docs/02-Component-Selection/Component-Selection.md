@@ -1,14 +1,14 @@
 ---
-title: Component Selection Example
+title: Component Selection
 ---
 
 ## Examples
 
 ### Style 1
 
-> This is the example found in the assignment, uses more html
 
-*Table 1: Example component selection*
+
+*Table 1: component selection*
 
 **Op-Amp**
 
