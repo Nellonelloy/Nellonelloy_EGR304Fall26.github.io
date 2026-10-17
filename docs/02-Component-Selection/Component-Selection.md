@@ -31,3 +31,15 @@ title: Component Selection
 **Choice:** Option 1: L7805ABV-DG Voltage Regulator
 
 **Rationale:** The voltage regulator I chose is a bit more expensive, but it's footprint is more compatible with my PCB than the others, and the advantages the other voltage regulators have over this one are of negligible difference for the purpose of this project.
+
+**Photoresistor**
+
+| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+|<img width="64" height="64" alt="image" src="https://github.com/user-attachments/assets/93635b16-25ce-420c-beb9-0c158fae6be9" /><br>Option 1.<br> NSL-5150 Photoresistor<br>$4.53/each<br>[link to product](https://www.digikey.com/en/products/detail/advanced-photonix/NSL-5150/5039798) | \* 550nm wavelength<br>\* Very high dark resistance<br>\* 10k-20k illuminance resistance | \* Expensive<br>\* Photoresistors lose accuracy in high light conditions<br>\* |
+|<img width="64" height="64" alt="image" src="https://github.com/user-attachments/assets/8899bc92-e759-4ab7-855c-9b756e20466b" /><br>\* Option 2. <br>\* AP7583Q-50D4-13 Voltage Regulator<br>\* $0.95/each <br>\* [Link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP7583Q-50D4-13/22158461) | \*Low cost <br>\* Low voltage dropout <br> \* Fixed 5V output | * Surface mount and not through hole <br>\*Four prong instead of three (very unimportant other than increasing mounting time)|
+|<img width="64" height="64" alt="image" src="https://github.com/user-attachments/assets/8d3177a0-d1fe-4be5-a39d-12a45ec5080a" /><br> Option 3.<br> AP7583AQ-50D4-13 Voltage Regulator<br>$1.01/each<br>[link to product](https://www.digikey.com/en/products/detail/diodes-incorporated/AP7583AQ-50D4-13/21823695)  | \* Cheap<br>\* 5V fixed ouput<br>\* Multiple control features | \* Not through hole<br>\* Four prong instead of three (very unimportant other than increasing mounting time)|
+**Choice:** Option 1: L7805ABV-DG Voltage Regulator
+
+**Rationale:** The voltage regulator I chose is a bit more expensive, but it's footprint is more compatible with my PCB than the others, and the advantages the other voltage regulators have over this one are of negligible difference for the purpose of this project.
+
