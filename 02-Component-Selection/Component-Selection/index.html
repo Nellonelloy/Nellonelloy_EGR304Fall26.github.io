@@ -566,15 +566,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -833,15 +824,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Style 2
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -907,76 +889,40 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
-<p><strong>External Clock Module</strong></p>
-<ol>
-<li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image1.png" data-desc-position="bottom"><img alt="" src="../image1.png"></a></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
-</ul>
+<p><strong>Rationale:</strong> The Op-Amp I chose is cheap, and it has a low voltage minimum supply. The biggest weakness of this one is the voltage input offset, but since we are going for an update every 2 seconds this is a sacrifice that I feel will have negiligble inpact.</p>
+<p><strong>Op-Amp</strong></p>
 <table>
 <thead>
 <tr>
-<th>Pros</th>
-<th>Cons</th>
+<th><strong>Solution</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/fb22a085-ec0a-428a-b031-995551954a36" data-desc-position="bottom"><img src="https://github.com/user-attachments/assets/fb22a085-ec0a-428a-b031-995551954a36" width="64" height="64" alt="image"></a> <br>Option 1.<br> TLV2464CN Operational Amplifier<br>$4.50/each<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/TLV2464CN/374292">link to product</a></td>
+<td>* Very low input offset<br>* Low current input bias<br>* Meets surface mount constraint of project</td>
+<td>* Much more expensive than other options<br>* Low operating temperature<br>* Voltage supply minimum fairly high</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/4fa9080c-1607-4cdb-bb7e-7f2202e04139" data-desc-position="bottom"><img width="64" height="64" alt="image" src="https://github.com/user-attachments/assets/4fa9080c-1607-4cdb-bb7e-7f2202e04139"></a><br>* Option 2. <br>* TL974IN Operational Amplifier<br>* $1.66/each <br>* <a href="https://www.digikey.com/en/products/detail/texas-instruments/TL974IN/1675406">Link to product</a></td>
+<td>* Very good voltage supply max <br>* Stable over operating temperature <br> * Good voltage input offset</td>
+<td>* Very bad current input bias <br>* Bad Slew rate (not very important in my utilization)</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/c3adcd19-5112-49c0-b658-1be537a325ad" data-desc-position="bottom"><img width="72" height="72" alt="image" src="https://github.com/user-attachments/assets/c3adcd19-5112-49c0-b658-1be537a325ad"></a> <br>Option 3.<br> MCP6004-I/P Operational Amplifier<br>$0.60/each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/MCP6004-I-P/523060">link to product</a></td>
+<td>* Very low cheap<br>* very good current input bias<br>* Good voltage supply minimum</td>
+<td>* Bad voltage input offset<br>* Bad current output (not very important for my application)</td>
+</tr>
+<tr>
+<td><strong>Choice:</strong> Option 3:  MCP6004-I/P Operational Amplifier</td>
+<td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>CTX936TR-ND surface mount oscillator</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../image3.png" data-desc-position="bottom"><img alt="" src="../image3.png"></a></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
-</tr>
-<tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
-</tr>
-<tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</li>
-</ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Rationale:</strong> The Op-Amp I chose is cheap, and it has a low voltage minimum supply. The biggest weakness of this one is the voltage input offset, but since we are going for an update every 2 seconds this is a sacrifice that I feel will have negiligble inpact.</p>
 
 
 
