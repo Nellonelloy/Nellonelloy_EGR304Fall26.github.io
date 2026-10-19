@@ -695,6 +695,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#power-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Budget
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Budget">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-budget-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Budget Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-budget-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Budget Calculations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#conclusions" class="md-nav__link">
     <span class="md-ellipsis">
       Conclusions
@@ -704,9 +737,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resouces" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Resouces
+      Resources
     </span>
   </a>
   
@@ -818,6 +851,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#power-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Budget
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power Budget">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-budget-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Budget Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-budget-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Budget Calculations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#conclusions" class="md-nav__link">
     <span class="md-ellipsis">
       Conclusions
@@ -827,9 +893,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#resouces" class="md-nav__link">
+  <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
-      Resouces
+      Resources
     </span>
   </a>
   
@@ -861,17 +927,70 @@
   <h1>Power Budget</h1>
 
 <h2 id="overview">Overview</h2>
-<p>Write a overview of what you did and why you did a Power Budget.</p>
-<blockquote>
-<p>Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.</p>
-</blockquote>
+<p>The purpose of this power budget is to determine the electrical power requirements of my pressure-sensing subsystem and ensure that the selected voltage regulator and external power supply can safely operate all components.</p>
+<p>The subsystem uses a Pololu 1470 power supply to provide 9V DC to an L7805ABV-DG voltage regulator, which converts the voltage to 5V. This regulated 5V supply powers the PIC18F57Q43 Curiosity Nano and the CFSensor XGZP6878A15115KPA pressure sensor.</p>
+<p>The total estimated current consumption of the components was calculated, and a 25% safety margin was added to account for potential variations in power consumption.</p>
+<h2 id="power-budget">Power Budget</h2>
+<p>The power budget was divided into four sections:</p>
+<ul>
+<li>Section A: Maximum current consumption of major components.</li>
+<li>Section B: Power rail assignments and safety margin.</li>
+<li>Section C: Voltage regulator selection and available current.</li>
+<li>Section D: External power supply selection and available current.</li>
+</ul>
+<p>The system operates using a single regulated 5V power rail.</p>
+<h3 id="power-budget-summary">Power Budget Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Estimated Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PIC18F57Q43 Curiosity Nano</td>
+<td>20 mA</td>
+</tr>
+<tr>
+<td>CFSensor XGZP6878A15115KPA</td>
+<td>5 mA</td>
+</tr>
+<tr>
+<td>Curiosity Nano Support Circuitry</td>
+<td>0.005 mA</td>
+</tr>
+<tr>
+<td>Total Current</td>
+<td>25.005 mA</td>
+</tr>
+<tr>
+<td>25% Safety Margin</td>
+<td>6.251 mA</td>
+</tr>
+<tr>
+<td>Total Required Current</td>
+<td>31.256 mA</td>
+</tr>
+</tbody>
+</table>
+<p>The PIC and pressure sensor current values are provisional estimates and will require verification against manufacturer specifications or physical testing.</p>
+<h3 id="power-budget-calculations">Power Budget Calculations</h3>
 <p></p>
 <p></p>
 <p></p>
 <h2 id="conclusions">Conclusions</h2>
-<p>From the prepare Power Budget, .....</p>
-<h2 id="resouces">Resouces</h2>
-<p>The power budget as a PDF download is available <a href="../PowerBudgetExample.pdf"><em>here</em></a>, and a Microsoft Excel Sheet <a href="../PowerBudgetExample.xlsx"><em>here</em></a>.</p>
+<p>The power budget indicates that the selected power supply and voltage regulator have sufficient current capacity to operate the pressure-sensing subsystem.</p>
+<p>The estimated total current requirement is 31.256 mA after including the 25% safety margin.</p>
+<p>The L7805ABV-DG voltage regulator is rated to supply up to 1500 mA, which exceeds the subsystem's estimated requirements.</p>
+<p>The Pololu 1470 power supply provides 9V at a maximum of 1000 mA. Including a provisional 8 mA allowance for regulator current consumption, the estimated input current requirement is 39.256 mA. This leaves approximately 960.744 mA of available current capacity.</p>
+<p>These calculations suggest that the selected components are suitable for the subsystem's power requirements. However, the maximum current consumption of the microcontroller, pressure sensor, and voltage regulator should be verified before the final design review.</p>
+<h2 id="resources">Resources</h2>
+<p>The completed power budget is available in the following formats:</p>
+<ul>
+<li><a href="PressurePowerBudget.pdf">Power Budget PDF</a></li>
+<li><a href="PressurePowerBudget.xlsx">Power Budget Excel Spreadsheet</a></li>
+</ul>
 
 
 
