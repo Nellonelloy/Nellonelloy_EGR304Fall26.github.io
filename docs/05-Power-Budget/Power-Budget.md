@@ -36,11 +36,11 @@ The PIC and pressure sensor current values are provisional estimates and will re
 
 ### Power Budget Calculations
 
-![Power Budget Section 1](PressureBudget1.png)
+![Power Budget Section 1](budgetPg1.png)
 
-![Power Budget Section 2](PressureBudget2.png)
+![Power Budget Section 2](budgetPg2.png)
 
-![Power Budget Section 3](PressureBudget3.png)
+![Power Budget Section 3](budgetPg3.png)
 
 ## Conclusions
 
