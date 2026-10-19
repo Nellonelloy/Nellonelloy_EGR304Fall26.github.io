@@ -923,7 +923,7 @@
 </tbody>
 </table>
 <p><strong>Rationale:</strong> The voltage regulator I chose is a bit more expensive, but it's footprint is more compatible with my PCB than the others, and the advantages the other voltage regulators have over this one are of negligible difference for the purpose of this project.</p>
-<p><strong>Photoresistor</strong></p>
+<p><strong>Pressure Sensor</strong></p>
 <table>
 <thead>
 <tr>
@@ -934,28 +934,33 @@
 </thead>
 <tbody>
 <tr>
-<td><br>Option 1.<br> NSL-5150 Photoresistor<br>$4.53/each<br><a href="https://www.digikey.com/en/products/detail/advanced-photonix/NSL-5150/5039798">link to product</a></td>
-<td>* 550nm wavelength<br>* Very high dark resistance<br>* 10k-20k illuminance resistance</td>
-<td>* Expensive<br>* Photoresistors lose accuracy in high light conditions</td>
+<td><br>Option 1.<br> CFSensor XGZP6878A15115KPA Pressure Sensor<br>$7.20/each<br><a href="https://www.digikey.com/en/products/detail/cfsensor/XGZP6878A15115KPA/22530803">link to product</a></td>
+<td>* Cheap<br>* Pressure range covers needed levels<br></td>
+<td>* 2.5% margin of error worse than original requirements<br>* Already amplified making op amp unecessary</td>
 </tr>
 <tr>
-<td><br>* Option 2. <br>* NSL-5152 Photoresistor<br>* $0.96/each <br>* <a href="https://www.digikey.com/en/products/detail/advanced-photonix/NSL-5152/5423680">Link to product</a></td>
-<td>*Low cost <br>* 10k-20k illuminance resistance <br> * 550nm wavelength</td>
-<td>* Photoresistors have low accuracy in high sunlight <br>*half the dark cell resistance</td>
+<td><br>* Option 2. <br>*Honeywell Sensing and Productivity Solutions 13U1000PA0K</td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td><br> Option 3.<br> NSL-A6011 Photoresistor<br>$0.88/each<br><a href="https://www.digikey.com/en/products/detail/advanced-photonix/NSL-A6011/26316778?s=N4IgTCBcDaIHIGUAyBaAggNgAwEYcgF0BfIA">link to product</a></td>
-<td>* Cheap<br>* Documented gamma value<br>* compact</td>
-<td>* A little outside the optimal wavelength range<br>* Low dark resistance</td>
+<td>Pressure Sensor<br>* $363.96/each <br>* <a href="https://www.digikey.com/en/products/detail/honeywell-sensing-and-productivity-solutions/13U1000PA0K/10465927">Link to product</a></td>
+<td>*Accuracy within project bounds <br>* Compatible with 5V power rail <br> * Allows use of chosen op amp</td>
+<td>* Extremely expensive <br>*Out of stock at the supplier</td>
 </tr>
 <tr>
-<td><strong>Choice:</strong> Option 3: NSL-A6011 Photoresistor</td>
+<td><br> Option 3.<br> WEC 13U0500PA0K pressure sensor<br>$195.18/each<br><a href="https://www.digikey.com/en/products/detail/advanced-photonix/NSL-A6011/26316778?s=N4IgTCBcDaIHIGUAyBaAggNgAwEYcgF0BfIA">link to product</a></td>
+<td>* Allows use of op-amp<br>* 0.25% margin of error<br>* Compatible with 5v power rail</td>
+<td>* Extremely expensive<br>* Large metal package</td>
+</tr>
+<tr>
+<td><strong>Choice:</strong> Option 1:  CFSensor XGZP6878A15115KPA Pressure Sensor</td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Rationale:</strong> Although the other two options beat out the A6011 in every category other than price, the fact that we have a documented gamma value gives us a reference point for our code, which will make our reading more accurate.</p>
+<p><strong>Rationale:</strong> This choice does not require an op-amp, and it is the only affordable option that was available that was also in stock.</p>
 <p><strong>Power-Supply</strong></p>
 <table>
 <thead>
