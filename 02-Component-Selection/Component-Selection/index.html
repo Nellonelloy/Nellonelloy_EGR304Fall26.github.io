@@ -571,6 +571,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pin-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pin Table
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pin Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pin-selection-rationale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pin Selection Rationale
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -829,6 +853,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pin-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pin Table
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pin Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pin-selection-rationale" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pin Selection Rationale
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -989,6 +1037,61 @@
 </tbody>
 </table>
 <p><strong>Rationale:</strong> The power supply I chose has a regulated 9V output, high current capacity, and compatibility with my voltage regulator. The 1A output will be useful if there are any future modifications to the design.</p>
+<h2 id="pin-table">Pin Table</h2>
+<p>The following table identifies the pin connections used by the
+PIC18F57Q43 Curiosity Nano in the pressure-sensing subsystem.</p>
+<table>
+<thead>
+<tr>
+<th>PIC Pin</th>
+<th>Function</th>
+<th>Connected Component</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RA0 (ANA0)</td>
+<td>Analog Input</td>
+<td>CFSensor XGZP6878A15115KPA</td>
+<td>Receives analog pressure measurements</td>
+</tr>
+<tr>
+<td>RC2 (UART1 TX)</td>
+<td>Serial Output</td>
+<td>Team Communication Connector</td>
+<td>Transmits pressure measurements</td>
+</tr>
+<tr>
+<td>RC3 (UART1 RX)</td>
+<td>Serial Input</td>
+<td>Team Communication Connector</td>
+<td>Receives communication from other subsystems</td>
+</tr>
+<tr>
+<td>VTG</td>
+<td>Power Input</td>
+<td>L7805ABV-DG Voltage Regulator</td>
+<td>Receives regulated 5V</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>Ground</td>
+<td>Common Ground</td>
+<td>Provides ground reference</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pin-selection-rationale">Pin Selection Rationale</h3>
+<p>The RA0 pin was selected because it supports analog-to-digital
+conversion, allowing the PIC18F57Q43 to measure the analog voltage
+produced by the pressure sensor without requiring an external
+operational amplifier.</p>
+<p>RC2 and RC3 were selected for UART communication between
+subsystems. These assignments are preliminary and will be
+confirmed when the team finalizes its communication interface.</p>
+<p>The VTG and GND connections provide the microcontroller with
+regulated 5V power from the L7805ABV-DG voltage regulator.</p>
 
 
 
