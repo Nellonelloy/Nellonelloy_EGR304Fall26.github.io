@@ -59,4 +59,4 @@ These calculations suggest that the selected components are suitable for the sub
 The completed power budget is available in the following formats:
 
 - [Power Budget PDF](PressurePowerBudget.pdf)
-- [Power Budget Excel Spreadsheet](PressurePowerBudget.xlsx)
+- [Power Budget Excel Spreadsheet](Power_Budget_Pressure_Sensor.xlsx)
