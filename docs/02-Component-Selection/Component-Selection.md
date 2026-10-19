@@ -53,3 +53,30 @@ title: Component Selection
 **Choice:** Option 2:  Pololu 1470 Power Supply
 
 **Rationale:** The power supply I chose has a regulated 9V output, high current capacity, and compatibility with my voltage regulator. The 1A output will be useful if there are any future modifications to the design.
+
+## Pin Table
+
+The following table identifies the pin connections used by the
+PIC18F57Q43 Curiosity Nano in the pressure-sensing subsystem.
+
+| PIC Pin | Function | Connected Component | Purpose |
+|---|---|---|---|
+| RA0 (ANA0) | Analog Input | CFSensor XGZP6878A15115KPA | Receives analog pressure measurements |
+| RC2 (UART1 TX) | Serial Output | Team Communication Connector | Transmits pressure measurements |
+| RC3 (UART1 RX) | Serial Input | Team Communication Connector | Receives communication from other subsystems |
+| VTG | Power Input | L7805ABV-DG Voltage Regulator | Receives regulated 5V |
+| GND | Ground | Common Ground | Provides ground reference |
+
+### Pin Selection Rationale
+
+The RA0 pin was selected because it supports analog-to-digital
+conversion, allowing the PIC18F57Q43 to measure the analog voltage
+produced by the pressure sensor without requiring an external
+operational amplifier.
+
+RC2 and RC3 were selected for UART communication between
+subsystems. These assignments are preliminary and will be
+confirmed when the team finalizes its communication interface.
+
+The VTG and GND connections provide the microcontroller with
+regulated 5V power from the L7805ABV-DG voltage regulator.
