@@ -32,3 +32,24 @@ for<br>
 To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
 
 For all the sections
+## Project Documentation
+
+The following sections document the design and development
+of my pressure-sensing subsystem.
+
+### Component Selection
+
+This section compares potential components for the
+pressure-sensing subsystem, including the pressure sensor,
+voltage regulator, and power supply.
+
+[View Component Selection](02-Component-Selection/Component-Selection.md)
+
+### Power Budget
+
+This section provides the estimated power consumption
+of the subsystem and verifies that the selected
+power supply and voltage regulator can provide
+sufficient current.
+
+[View Power Budget](05-Power-Budget/Power-Budget.md)
