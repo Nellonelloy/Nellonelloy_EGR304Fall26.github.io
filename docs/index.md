@@ -53,3 +53,13 @@ power supply and voltage regulator can provide
 sufficient current.
 
 [View Power Budget](05-Power-Budget/Power-Budget.md)
+
+### Schematic
+
+This section presents the electrical schematic for my
+pressure-sensing subsystem. The design includes a
+PIC18F57Q43 microcontroller, pressure sensor,
+voltage regulator, operational amplifier,
+low-pass filter, and ribbon cable connector.
+
+[View Schematic](04-Schematic/EGR_304_Schematic_First.pdf)
