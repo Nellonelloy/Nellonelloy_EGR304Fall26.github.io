@@ -22,7 +22,8 @@ PIC18F57Q43 microcontroller.
 
 ## Schematic
 
-<iframe src="../EGR_304_Schematic_First.pdf" width="100%" height="700px" title="Pressure Sensor Schematic"></iframe>
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/1b4d9582-13ca-4d51-be5e-c0bd7e6eef76" />
+
 
 **Figure 1:** Electrical schematic of the pressure-sensing
 subsystem.
