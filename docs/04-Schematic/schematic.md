@@ -1,16 +1,36 @@
----
-title: Schematic
----
+# Schematic
 
 ## Overview
 
-This schematic is design to support .... (highlight functionally, power, and controller).
+This schematic illustrates the electrical design of my
+pressure-sensing subsystem for the EGR 304 environmental
+monitoring project.
 
+The circuit incorporates a PIC18F57Q43 microcontroller,
+an XGZP6887A pressure sensor, an MCP6004 operational
+amplifier, and a 5V voltage regulator.
 
-![schematic](Screenshot.png){style width:"350" height:"300;"}
-**Figure ##:** Showing a example schematic.
+Additional components include a low-pass RC filter
+for signal conditioning, a fuse for overcurrent
+protection, and an 8-pin ribbon cable connector
+for communication between subsystems.
 
+The pressure sensor produces an analog voltage
+corresponding to the measured pressure. The signal
+is conditioned before being processed by the
+PIC18F57Q43 microcontroller.
 
-## Resouces
+## Schematic
 
-The schematic as a PDF download is available [*here*](ExampleSchematic.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+![Pressure Sensor Schematic](Screenshot.png)
+
+**Figure 1:** Electrical schematic of the pressure-sensing
+subsystem.
+
+## Resources
+
+The complete electrical schematic is available below.
+
+[Download Schematic PDF](EGR_304_Schematic_First.pdf)
+
+[Download KiCad Project ZIP](304_Schematic_zip.zip)
