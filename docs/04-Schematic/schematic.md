@@ -22,7 +22,8 @@ PIC18F57Q43 microcontroller.
 
 ## Schematic
 
-<img width="2215" height="1530" alt="image" src="https://github.com/user-attachments/assets/2a6132a1-6929-44cd-9e9b-8e6728a12bc3" />
+<img width="2217" height="1552" alt="image" src="https://github.com/user-attachments/assets/fe34b30f-54ff-4d30-bd27-cbce2bcc125a" />
+
 
 
 
