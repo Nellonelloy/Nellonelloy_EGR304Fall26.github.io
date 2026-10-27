@@ -15,4 +15,9 @@ Showing an example of how to import a screenshot of the block diagram created ou
 
  Indivial Block diagram <img width="1645" height="1765" alt="image" src="https://github.com/user-attachments/assets/015689dc-d082-4801-a58f-406bfa72bff6" />
 
+## Resources
+
+The complete block diagram is available below.
+
+[Download Schematic PDF](Individual_Block_Diagtram.pdf)
 
