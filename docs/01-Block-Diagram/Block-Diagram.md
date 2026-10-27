@@ -13,5 +13,6 @@ The PIC communicates with the rest of the team system through Connector 1 using 
 ## Example Block Diagram 
 Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
 
-![ Indivial Block diagram ]<img width="1850" height="1892" alt="image" src="https://github.com/user-attachments/assets/e0517ec6-bfee-45ad-86b2-67fa32095eb2" />
+ Indivial Block diagram <img width="1645" height="1765" alt="image" src="https://github.com/user-attachments/assets/015689dc-d082-4801-a58f-406bfa72bff6" />
+
 
