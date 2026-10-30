@@ -7,17 +7,16 @@ tags:
 <center>
 <font size= "6"> Brendan Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> Weather Reader</font><br>
 for<br>
-<font size= "5"> Team 205 </font><br>
+<font size= "5"> Team 202 </font><br>
 
-**Submission: 09/02/2026
+**Submission: 10/30/2026
 </center>
 
 ## Introduction
 
-* This needs to be updated so that a reader gets an idea of the purpose of this datasheet.
-
+* This is data sheet is to showcase and record my individual efforts to the creation of the weather device outside of just the team specific work. 
 ### Project Summary
 
 * This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
@@ -26,8 +25,7 @@ for<br>
 
 ### My Contribution
 
-* This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
+My contribution to the weather sensing device is the pressure sensor. It reads absolute pressure as an analog signal, converts it into a readable digital signal, and sends it to my teammates PCB.
 
 To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
 
