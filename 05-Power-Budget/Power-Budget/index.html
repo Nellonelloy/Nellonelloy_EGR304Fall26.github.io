@@ -695,6 +695,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#overview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#power-budget" class="md-nav__link">
     <span class="md-ellipsis">
       Power Budget
@@ -731,6 +740,15 @@
   <a href="#conclusions" class="md-nav__link">
     <span class="md-ellipsis">
       Conclusions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
     </span>
   </a>
   
@@ -851,6 +869,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#overview_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#power-budget" class="md-nav__link">
     <span class="md-ellipsis">
       Power Budget
@@ -893,6 +920,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#resources" class="md-nav__link">
     <span class="md-ellipsis">
       Resources
@@ -927,16 +963,18 @@
   <h1>Power Budget</h1>
 
 <h2 id="overview">Overview</h2>
+<h2 id="overview_1">Overview</h2>
 <p>The purpose of this power budget is to determine the electrical power requirements of my pressure-sensing subsystem and ensure that the selected voltage regulator and external power supply can safely operate all components.</p>
-<p>The subsystem uses a Pololu 1470 power supply to provide 9V DC to an L7805ABV-DG voltage regulator, which converts the voltage to 5V. This regulated 5V supply powers the PIC18F57Q43 Curiosity Nano and the CFSensor XGZP6878A15115KPA pressure sensor.</p>
-<p>The total estimated current consumption of the components was calculated, and a 25% safety margin was added to account for potential variations in power consumption.</p>
+<p>The subsystem uses a Pololu 1470 power supply to provide 9V DC to an L7805ABV-DG voltage regulator, which converts the voltage to 5V. This regulated 5V supply powers the PIC18F57Q43 Curiosity Nano, CFSensor XGZP6878A15115KPA pressure sensor, and MCP6004 operational amplifier.</p>
+<p>The MCP6004 provides analog signal conditioning, while an RC low-pass filter reduces high-frequency noise before the pressure measurement is processed by the microcontroller.</p>
+<p>The total estimated current consumption of the major components was calculated, and a 25% safety margin was added to account for potential variations in power consumption.</p>
 <h2 id="power-budget">Power Budget</h2>
 <p>The power budget was divided into four sections:</p>
 <ul>
-<li>Section A: Maximum current consumption of major components.</li>
-<li>Section B: Power rail assignments and safety margin.</li>
-<li>Section C: Voltage regulator selection and available current.</li>
-<li>Section D: External power supply selection and available current.</li>
+<li><strong>Section A:</strong> Maximum current consumption of major components.</li>
+<li><strong>Section B:</strong> Power rail assignments and safety margin.</li>
+<li><strong>Section C:</strong> Voltage regulator selection and available current.</li>
+<li><strong>Section D:</strong> External power supply selection and available current.</li>
 </ul>
 <p>The system operates using a single regulated 5V power rail.</p>
 <h3 id="power-budget-summary">Power Budget Summary</h3>
@@ -957,34 +995,41 @@
 <td>5 mA</td>
 </tr>
 <tr>
+<td>MCP6004 Operational Amplifier</td>
+<td>0.68 mA</td>
+</tr>
+<tr>
 <td>Curiosity Nano Support Circuitry</td>
 <td>0.005 mA</td>
 </tr>
 <tr>
-<td>Total Current</td>
-<td>25.005 mA</td>
+<td><strong>Total Current</strong></td>
+<td><strong>25.685 mA</strong></td>
 </tr>
 <tr>
 <td>25% Safety Margin</td>
-<td>6.251 mA</td>
+<td>6.421 mA</td>
 </tr>
 <tr>
-<td>Total Required Current</td>
-<td>31.256 mA</td>
+<td><strong>Total Required Current</strong></td>
+<td><strong>32.106 mA</strong></td>
 </tr>
 </tbody>
 </table>
-<p>The PIC and pressure sensor current values are provisional estimates and will require verification against manufacturer specifications or physical testing.</p>
+<p>The PIC and pressure sensor current values are provisional estimates that require verification against manufacturer specifications or physical testing. The MCP6004 current estimate represents its maximum quiescent current allowance rather than its total consumption under every possible load.</p>
+<p>The selected L7805ABV-DG voltage regulator has a rated output current capacity of 1,500 mA, which exceeds the estimated subsystem requirement of 32.106 mA. The Pololu 1470 power supply provides 9V DC at up to 1,000 mA, offering sufficient nominal capacity for the estimated load.</p>
+<p>Based on these calculations, the selected power components provide adequate current capacity for the pressure-sensing subsystem, subject to verification of actual component loads and regulator thermal performance.</p>
 <h3 id="power-budget-calculations">Power Budget Calculations</h3>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../budgetPg1.png" data-desc-position="bottom"><img alt="Power Budget Section 1" src="../budgetPg1.png"></a></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../budgetPg2.png" data-desc-position="bottom"><img alt="Power Budget Section 2" src="../budgetPg2.png"></a></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../budgetPg3.png" data-desc-position="bottom"><img alt="Power Budget Section 3" src="../budgetPg3.png"></a></p>
 <h2 id="conclusions">Conclusions</h2>
-<p>The power budget indicates that the selected power supply and voltage regulator have sufficient current capacity to operate the pressure-sensing subsystem.</p>
-<p>The estimated total current requirement is 31.256 mA after including the 25% safety margin.</p>
-<p>The L7805ABV-DG voltage regulator is rated to supply up to 1500 mA, which exceeds the subsystem's estimated requirements.</p>
-<p>The Pololu 1470 power supply provides 9V at a maximum of 1000 mA. Including a provisional 8 mA allowance for regulator current consumption, the estimated input current requirement is 39.256 mA. This leaves approximately 960.744 mA of available current capacity.</p>
-<p>These calculations suggest that the selected components are suitable for the subsystem's power requirements. However, the maximum current consumption of the microcontroller, pressure sensor, and voltage regulator should be verified before the final design review.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The power budget indicates that the selected power supply and voltage regulator have sufficient current capacity to operate the pressure-sensing subsystem, including the PIC18F57Q43 microcontroller, CFSensor XGZP6878A15115KPA pressure sensor, and MCP6004 operational amplifier.</p>
+<p>The estimated total current consumption is <strong>25.685 mA</strong>, with a total required current of <strong>32.106 mA</strong> after including the 25% safety margin.</p>
+<p>The L7805ABV-DG voltage regulator is rated to supply up to <strong>1500 mA</strong>, which exceeds the subsystem's estimated requirements.</p>
+<p>The Pololu 1470 power supply provides 9V at a maximum of 1000 mA. Including a provisional 8 mA allowance for regulator current consumption, the estimated input current requirement is <strong>40.106 mA</strong>. This leaves approximately <strong>959.894 mA</strong> of available current capacity.</p>
+<p>These calculations suggest that the selected components are suitable for the subsystem's power requirements. However, the maximum current consumption of the microcontroller, pressure sensor, and operational amplifier should be verified before the final design review. The voltage regulator's thermal performance should also be evaluated.</p>
 <h2 id="resources">Resources</h2>
 <p>The completed power budget is available in the following formats:</p>
 <ul>
