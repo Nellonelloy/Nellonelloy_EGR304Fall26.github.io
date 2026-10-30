@@ -16,7 +16,7 @@ for<br>
 
 ## Introduction
 
-* This is data sheet is to showcase and record my individual efforts to the creation of the weather device outside of just the team specific work. 
+* My name is Brendan, an Electrical Systems Engineering student at ASU, and this will be a data sheet to showcase and record my individual efforts to the creation of the weather device outside of just the team specific work. 
 ### Project Summary
 
 * This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
