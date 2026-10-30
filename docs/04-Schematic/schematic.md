@@ -35,6 +35,6 @@ subsystem.
 
 The complete electrical schematic is available below.
 
-[Download Schematic PDF](EGR304_Schematic_First.pdf)
+[Download Schematic PDF](EGR_304_Schematic_First.pdf)
 
 [Download KiCad Project ZIP](EGR_304_Schematic_First_Updated_Oct30.zip)
