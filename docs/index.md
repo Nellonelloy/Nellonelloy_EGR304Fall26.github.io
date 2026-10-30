@@ -19,7 +19,8 @@ for<br>
 * My name is Brendan, an Electrical Systems Engineering student at ASU, and this will be a data sheet to showcase and record my individual efforts to the creation of the weather device outside of just the team specific work. 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
+Our EGR 304 team project involves designing and developing an environmental monitoring system capable of measuring atmospheric pressure, temperature, humidity, and light levels. My individual contribution focuses on designing a PCB that uses a pressure sensor, operational amplifier, low-pass filter, and PIC18F57Q43 microcontroller to accurately measure and process atmospheric pressure data. This subsystem will communicate with the team's other PCBs through UART, allowing the collected measurements to be displayed on a central LCD screen and contributing to the overall functionality of the environmental monitoring system.
+
 * Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
 
 
