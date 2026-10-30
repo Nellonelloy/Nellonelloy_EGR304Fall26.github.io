@@ -19,9 +19,9 @@ for<br>
 * My name is Brendan, an Electrical Systems Engineering student at ASU, and this will be a data sheet to showcase and record my individual efforts to the creation of the weather device outside of just the team specific work. 
 ### Project Summary
 
-Our EGR 304 team project involves designing and developing an environmental monitoring system capable of measuring atmospheric pressure, temperature, humidity, and light levels. My individual contribution focuses on designing a PCB that uses a pressure sensor, operational amplifier, low-pass filter, and PIC18F57Q43 microcontroller to accurately measure and process atmospheric pressure data. This subsystem will communicate with the team's other PCBs through UART, allowing the collected measurements to be displayed on a central LCD screen and contributing to the overall functionality of the environmental monitoring system.
+* Our EGR 304 team project involves designing and developing an environmental monitoring system capable of measuring atmospheric pressure, temperature, humidity, and light levels. My individual contribution focuses on designing a PCB that uses a pressure sensor, operational amplifier, low-pass filter, and PIC18F57Q43 microcontroller to accurately measure and process atmospheric pressure data. This subsystem will communicate with the team's other PCBs through UART, allowing the collected measurements to be displayed on a central LCD screen and contributing to the overall functionality of the environmental monitoring system.
 
-* Add context that ties into the link to your [team report.](https://embedded-systems-design.github.io/EGR304TeamTemplate/)
+* My pressure-sensing subsystem is one of four PCBs that make up our environmental monitoring system. While my individual work focuses on measuring and processing atmospheric pressure, the other subsystems measure light and humidity and display the collected data. For a more in depth explanation of the system's design, objectives, and integration, visit our Team Report. [team report.](https://asu-egr304-2026-f-202.github.io/ASU-EGR304-2026-F-202/)
 
 
 ### My Contribution
