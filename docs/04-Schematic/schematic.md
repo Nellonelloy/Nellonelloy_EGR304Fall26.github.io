@@ -22,7 +22,8 @@ PIC18F57Q43 microcontroller.
 
 ## Schematic
 
-<img width="2217" height="1552" alt="image" src="https://github.com/user-attachments/assets/fe34b30f-54ff-4d30-bd27-cbce2bcc125a" />
+<img width="2345" height="1622" alt="image" src="https://github.com/user-attachments/assets/6b5bb3af-150c-4a21-9a59-d6ea4901ee89" />
+
 
 
 
@@ -34,6 +35,6 @@ subsystem.
 
 The complete electrical schematic is available below.
 
-[Download Schematic PDF](EGR304_Schematic_Updated2.pdf)
+[Download Schematic PDF](EGR304_Schematic_First.pdf)
 
 [Download KiCad Project ZIP](EGR304_Schematic_Updated.zip)
