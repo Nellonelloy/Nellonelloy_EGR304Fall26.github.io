@@ -41,7 +41,7 @@ title: Component Selection
 |<img width="64" height="64" alt="image" src="https://github.com/user-attachments/assets/1fd17e77-2a73-47be-83c2-e4980184f7e4" /><br> Option 3.<br> WEC 13U0500PA0K pressure sensor<br>$195.18/each<br>[link to product](https://www.digikey.com/en/products/detail/wec/13U0500PA0K/27528758)  | \* Allows use of op-amp<br>\* 0.25% margin of error<br>\* Compatible with 5v power rail | \* Extremely expensive<br>\* Large metal package |
 **Choice:** Option 1:  CFSensor XGZP6878A15115KPA Pressure Sensor
 
-**Rationale:** This choice does not require an op-amp, and it is the only affordable option that was available that was also in stock.
+**Rationale:** It is the only affordable option that was available that was also in stock.
 
 **Power-Supply**
 
