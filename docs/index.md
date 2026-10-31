@@ -28,7 +28,6 @@ for<br>
 
 My contribution to the weather sensing device is the pressure sensor. It reads absolute pressure as an analog signal, converts it into a readable digital signal, and sends it to my teammates PCB.
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/03-BOM/BOM/) section of the datasheet.
 
 For all the sections
 ## Project Documentation
@@ -43,6 +42,15 @@ pressure-sensing subsystem, including the pressure sensor,
 voltage regulator, and power supply.
 
 [View Component Selection](02-Component-Selection/Component-Selection.md)
+
+### Bill of Materials
+
+This section provides a detailed list of the components
+required to construct my pressure-sensing subsystem,
+including component specifications, quantities,
+manufacturers, suppliers, and estimated costs.
+
+[View Bill of Materials](03-BOM/BOM.md)
 
 ### Power Budget
 
