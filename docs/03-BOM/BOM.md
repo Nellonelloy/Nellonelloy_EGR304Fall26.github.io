@@ -12,9 +12,15 @@ The Bill of Materials (BOM) provides a detailed list of the components required 
 
 
 
-## Bill of Materials Example Image
+## Bill of Materials Image
 <img width="2752" height="1575" alt="image" src="https://github.com/user-attachments/assets/961c878f-1895-4119-a028-b5220e4af274" />
 
 **Figure 1:** Bill of Materials as a screenshot.
 
+## Resources
 
+The complete Bill Of Materials is below
+
+[Download Schematic PDF](BOM-Screenshot.png)
+
+[Download KiCad Project ZIP](EGR304_Pressure_Sensor_BOM.xlsx_)
