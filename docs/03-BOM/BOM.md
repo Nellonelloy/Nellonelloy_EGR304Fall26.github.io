@@ -22,7 +22,8 @@ Note: Setting it up as a table is nice because it is completely viewable without
 * You could also import your BOM via a screenshot of the spreadsheet created BOM
 
 ## Bill of Materials Example (as Image)
-![](BOM-Screenshot.png){style width: "2000"}
+<img width="2752" height="1575" alt="image" src="https://github.com/user-attachments/assets/961c878f-1895-4119-a028-b5220e4af274" />
+
 **Figure 2:** Example Bill of Materials as a screenshot.
 
 As you can see, the text can be difficult to read without opening the image.
