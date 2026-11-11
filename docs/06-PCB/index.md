@@ -47,9 +47,9 @@ The following images document the PCB manufacturing verification performed using
 
 The following image shows the results of the KiCad Design Rules Checker.
 
-![KiCad DRC Results](DRC-Results.png)
+![KiCad DRC Results](DRC-Analysis.png)
 
-[View KiCad DRC Report (PDF)](Pressure-Sensor_DRC.pdf)
+[View KiCad DRC Report (PDF)](DRC-Analysis.pdf)
 ### Manufacturing Files
 - [Gerber and Drill Files](GERBER.zip)
 
