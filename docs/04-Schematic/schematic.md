@@ -37,4 +37,4 @@ The complete electrical schematic is available below.
 
 [Download Schematic PDF](EGR-304_Pressure-Sensor.pdf)
 
-[Download KiCad Project ZIP](EGR_304_Schematic_First_Updated_Oct30.zip)
+[Download KiCad Project ZIP](EGR_304_Schematic_First_Updated_Nov09.zip)
