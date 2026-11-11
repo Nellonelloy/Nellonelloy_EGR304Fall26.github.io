@@ -7,9 +7,9 @@ This page documents my EGR 304 pressure sensor PCB design.
 ## PCB Layout
 
 ### Front Copper Layer
-
+[View Front PCB Layout (PDF)](PCB-Front.pdf)
 ### Back Copper Layer
-
+[View Back PCB Layout (PDF)](PCB-Back.pdf)
 ## Design Files
 
 ## PCB Manufacturing Files
