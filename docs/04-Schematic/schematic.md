@@ -22,7 +22,7 @@ PIC18F57Q43 microcontroller.
 
 ## Schematic
 
-<img width="2345" height="1622" alt="image" src="https://github.com/user-attachments/assets/6b5bb3af-150c-4a21-9a59-d6ea4901ee89" />
+<img width="2445" height="1680" alt="image" src="https://github.com/user-attachments/assets/0497d139-c314-4e0d-a9e7-9b561a600dd1" />
 
 
 
@@ -35,6 +35,6 @@ subsystem.
 
 The complete electrical schematic is available below.
 
-[Download Schematic PDF](EGR_304_Schematic_First.pdf)
+[Download Schematic PDF](EGR-304_Pressure-Sensor.pdf)
 
 [Download KiCad Project ZIP](EGR_304_Schematic_First_Updated_Oct30.zip)
