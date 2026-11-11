@@ -24,8 +24,32 @@ The following files contain the completed PCB design,
 manufacturing outputs, and verification documentation.
 
 ### Manufacturing Verification
-- [JLCPCB DFM Analysis Report](DFM%20analysis%20report_JLCDFM_GERBER.zip.pdf)
-- [KiCad Design Rules Check (DRC) Report](Pressure-Sensor_DRC.pdf)
+
+#### JLCPCB Design for Manufacturing (DFM)
+
+The following images document the PCB manufacturing verification performed using JLCPCB's DFM analysis tool.
+
+**PCB Overview**
+
+![JLCPCB PCB Overview](JLCDFM-PCB.png)
+
+**DFM Analysis 1**
+
+![JLCPCB DFM Analysis 1](JLCDFM-DFM1.png)
+
+**DFM Analysis 2**
+
+![JLCPCB DFM Analysis 2](JLCDFM-DFM2.png)
+
+[View Complete JLCPCB DFM Report (PDF)](DFM%20analysis%20report_JLCDFM_GERBER.zip.pdf)
+
+#### KiCad Design Rules Check (DRC)
+
+The following image shows the results of the KiCad Design Rules Checker.
+
+![KiCad DRC Results](DRC-Results.png)
+
+[View KiCad DRC Report (PDF)](Pressure-Sensor_DRC.pdf)
 ### Manufacturing Files
 - [Gerber and Drill Files](GERBER.zip)
 
