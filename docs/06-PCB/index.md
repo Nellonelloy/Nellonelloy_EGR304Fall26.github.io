@@ -51,7 +51,7 @@ The following image shows the results of the KiCad Design Rules Checker.
 
 [View KiCad DRC Report (PDF)](DRC-Analysis.pdf)
 ### Manufacturing Files
-- [Gerber and Drill Files](GERBER.zip)
+- [Gerber and Drill Files](Brendan-Team202.zip)
 
 ### Complete KiCad Project
 - [Download Complete KiCad Project](EGR304_PressureSensor_Project.zip)
